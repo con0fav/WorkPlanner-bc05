@@ -2,6 +2,8 @@
 
 A simple application for adding events to an 8 hour work schedule.
 
+https://con0fav.github.io/WorkPlanner-bc05/
+
 ## Use
 Input events into the forms on the page
 
