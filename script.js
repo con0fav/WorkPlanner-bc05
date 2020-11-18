@@ -8,5 +8,22 @@ var time = moment().format('MMMM Do YYYY, h:mm:ss a');
 $("#currentDay").text(time);
 
 
+$(window).on('unload', function(){
+    saveEvents();
+    loadEvents();
+});
 
 
+function saveEvents(){
+    $("#save").click(function(){
+        localStorage.events = $("#events").val();
+    })
+
+}
+
+function loadEvents(){
+    $('#events').val(localStorage.events);
+}
+
+console.log(saveEvents);
+console.log(loadEvents);
